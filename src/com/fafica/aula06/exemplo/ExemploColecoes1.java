@@ -3,7 +3,7 @@ import java.util.Collection;
 import java.util.HashSet;
 public class ExemploColecoes1 {
 	public static void main(String[] args) {
-		Collection colecaoHashSet = new HashSet();
+		HashSet colecaoHashSet = new HashSet();
 		colecaoHashSet.add("M");
 		colecaoHashSet.add("A");
 		colecaoHashSet.add("U");
