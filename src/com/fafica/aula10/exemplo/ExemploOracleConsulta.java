@@ -16,7 +16,7 @@ public class ExemploOracleConsulta {
     	
         // Cria a conexão com o banco de dados MySql usando o JDBC
         Connection conn = DriverManager
-        		.getConnection("jdbc:oracle:thin:@10.101.10.50:1521:XE", "system", "root");
+        		.getConnection("jdbc:oracle:thin:@192.168.43.59:1521:XE", "system", "root");
         
         /*
          * Exemplo de Consultar

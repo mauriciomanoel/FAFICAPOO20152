@@ -16,7 +16,7 @@ public class ExemploMySqlInsert {
     	
         // Cria a conexão com o banco de dados MySql usando o JDBC
         Connection conn = DriverManager
-        		.getConnection("jdbc:mysql://localhost/aula111", "root", "root");
+        		.getConnection("jdbc:mysql://localhost/aula10", "root", "root");
         
         /*
          * Exemplo de Insert
