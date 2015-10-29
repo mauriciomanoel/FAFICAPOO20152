@@ -25,8 +25,7 @@ public class ExemploMySqlInsert {
         String sql ="insert into cliente (nome, cpf, banco) values (?, ?, ?)";
  
         // Criar o PreparedStatement, objeto para executar a query
-        PreparedStatement preStatement = conn.prepareStatement(sql, 
-        		Statement.RETURN_GENERATED_KEYS);
+        PreparedStatement preStatement = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
         // Atualizando o primeiro parametro
         preStatement.setString(1, "Mauricio Manoel");
         preStatement.setString(2, "91376081779");

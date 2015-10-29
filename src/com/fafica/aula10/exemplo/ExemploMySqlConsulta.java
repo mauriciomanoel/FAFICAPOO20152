@@ -26,7 +26,7 @@ public class ExemploMySqlConsulta {
         String sql ="select * from cliente where cliente_id = ?";
         // Criar o PreparedStatement, objeto para executar a query
         PreparedStatement preStatement = conn.prepareStatement(sql);
-        preStatement.setInt(1, 2);
+        preStatement.setInt(1, 1);
         // Executando o select
         ResultSet resultSet = preStatement.executeQuery();
         

@@ -19,7 +19,7 @@ public class ExemploMySqlTransacao {
         		.getConnection("jdbc:mysql://localhost/aula10", "root", "root");
         
         // Desabilitando o AutoCommit;
-        conn.setAutoCommit(false);
+        conn.setAutoCommit(false); // begin transaction
         System.out.println("Iniciou");
         /*
          * Exemplo de Insert
@@ -67,7 +67,7 @@ public class ExemploMySqlTransacao {
         }
         
         try {
-        	for(int i=1;i<=10;i++) {
+        	for(int i=1;i<=15;i++) {
         		System.out.println("Tempo: " + i);
         		Thread.sleep(1000);
         	}
@@ -80,7 +80,7 @@ public class ExemploMySqlTransacao {
         //conn.rollback();
         
         // Comitando as ações no banco
-        conn.commit();
+        //conn.commit();
         
         // Habilitando o autocommit
         System.out.println("Terminou");

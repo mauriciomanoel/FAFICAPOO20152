@@ -31,7 +31,7 @@ public class ExemploOracleInsert {
         PreparedStatement preStatement = conn.prepareStatement(sql, new String[]{"CLIENTE_ID"});
         // Atualizando o primeiro parametro
         preStatement.setString(1, "Mauricio Manoel");
-        preStatement.setString(2, "91376081770");
+        preStatement.setString(2, "91376081771");
         preStatement.setString(3, "Bradesco");
         preStatement.execute();
         // Retorna um ResultSet com todas as chaves geradas
