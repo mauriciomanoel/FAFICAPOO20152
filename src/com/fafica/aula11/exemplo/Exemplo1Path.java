@@ -20,7 +20,7 @@ public class Exemplo1Path {
 		// Pega o nome do arquivo
 		System.out.println(path.getFileName());
 		// Inicializando a Variável String
-		texto = "Mauricio Manoel";
+		texto = "Mauricio Manoel Bina :D";
 		// Pegando os bytes do texto
 		bytes = texto.getBytes();
 		// Gravando no arquivo definido no path

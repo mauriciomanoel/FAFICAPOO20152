@@ -15,12 +15,12 @@ public class Exemplo2BufferedReader {
 		Path path = Paths.get("c:/temp/aulapoo/exemplo2.txt");
 		// Declarando variável do tipo charset 
 		// (Codificação de Caracteres)
-		Charset utf8 = StandardCharsets.UTF_8; 
+		Charset charset = StandardCharsets.ISO_8859_1; 
 		BufferedReader r = null;
 		try {
 			// Inicializando a variável para leitura 
 			// do arquivo com o mesmo charset
-			r = Files.newBufferedReader(path, utf8);
+			r = Files.newBufferedReader(path, charset);
 			// Enquanto não chegar no fim do arquivo, imprima
 			while ((linha = r.readLine()) != null) {
 				System.out.println(linha);

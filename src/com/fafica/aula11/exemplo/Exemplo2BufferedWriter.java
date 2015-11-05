@@ -14,14 +14,14 @@ public class Exemplo2BufferedWriter {
 		// Inicializando o path
 		Path path = Paths.get("c:/temp/aulapoo/exemplo2.txt");
 		// Declarando variável do tipo charset (Codificação de Caracteres)
-		Charset utf8 = StandardCharsets.ISO_8859_1; 
+		Charset charset = StandardCharsets.ISO_8859_1; 
 		// Criando variável do tipo BufferedWriter
 		BufferedWriter w = null;
 		try {
 			// Inicializando Variável
-			w = Files.newBufferedWriter(path, utf8);
+			w = Files.newBufferedWriter(path, charset);
 			// Gravando Variável
-			w.write("Mauricio\r\n");
+			w.write("Maurício\r\n");
 			w.write("Manoel\r\n");
 			w.write("Coelho\r\n");
 			// Libera os dados da memoria e grava no arquivo
