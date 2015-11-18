@@ -48,6 +48,8 @@ public class TelaCadastroCliente {
 	private JTable tableCliente;
 	private DefaultTableModel defaultTableModelCliente;
 	private ButtonGroup groupSexo;
+	private JRadioButton rdbtnMasculino;
+	private JRadioButton rdbtnFeminino;
 
 	/**
 	 * Launch the application.
@@ -219,11 +221,11 @@ public class TelaCadastroCliente {
 		panelCampos.add(txtEstado);
 		txtEstado.setColumns(10);
 		
-		JRadioButton rdbtnMasculino = new JRadioButton("Masculino");
-		rdbtnMasculino.setBounds(81, 100, 109, 23);
+		rdbtnMasculino = new JRadioButton("Masculino");
+		rdbtnMasculino.setBounds(71, 100, 109, 23);
 		panelCampos.add(rdbtnMasculino);
 		
-		JRadioButton rdbtnFeminino = new JRadioButton("Feminino");
+		rdbtnFeminino = new JRadioButton("Feminino");
 		rdbtnFeminino.setBounds(192, 100, 109, 23);
 		panelCampos.add(rdbtnFeminino);
 		
